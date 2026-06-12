@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "usernamehw.errorlens",
+        "bierner.docs-view",
+        "github.vscode-pull-request-github",
+        "meta.pyrefly"
+    ]
+}
