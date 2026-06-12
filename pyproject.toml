@@ -96,6 +96,7 @@ future-annotations = true
 
 [tool.ruff.lint.per-file-ignores]
 "!src/**" = ["D", "SLF"]
+"tests/**/*" = ["S101", "INP001", "PLR2004"]
 
 [tool.ruff.lint.isort]
 split-on-trailing-comma = false
