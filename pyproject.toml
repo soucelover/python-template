@@ -38,6 +38,12 @@ dev = [
     "ruff>=0.15,<1.0",
 ]
 
+tests = [
+    "pytest~=9.0",
+    "tox~=4.0",
+    "tox-uv>=1.35,<2.0",
+]
+
 # =============
 # Project Links
 # =============
@@ -124,3 +130,18 @@ infer-with-first-use = false
 
 [tool.pyrefly.errors]
 redundant-cast = "warn"
+
+# ===============
+# Pytest Settings
+# ===============
+[tool.pytest]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+addopts = [
+    # "--showlocals",                       # Show local variables for failed tests
+    "-r a",                                 # Summary for tests at the end
+    "--strict-markers",                     # Raise errors for misused markers
+    "--import-mode=importlib",              # Rich import mode avoiding name conflicts
+    "--color=yes",
+]
