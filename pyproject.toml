@@ -38,6 +38,15 @@ dev = [
     "ruff>=0.15,<1.0",
 ]
 
+# =============
+# Project Links
+# =============
+# TIP: Fill in the project links
+[project.urls]
+Repository = "https://github.com/soucelover/python_template.git"
+Issues = "https://github.com/soucelover/python_template/issues"
+Changelog = "https://github.com/soucelover/python_template/releases"
+
 # ============
 # Build System
 # ============
