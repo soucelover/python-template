@@ -27,6 +27,7 @@ dynamic = ["version"]
 # Requirements (Deps)
 # ===================
 # TIP: Narrow Python version if it would fit your environment better
+# NOTE: If you narrow, modify .github/workflows/quality-assurance.yaml and tox.toml
 requires-python = ">=3.10,<4.0"
 dependencies = []
 

@@ -53,6 +53,7 @@ jobs:
 
       - name: Publish package to PyPI
         env:
+          # TIP: Create PYPI_TOKEN secret in your GitHub repository
           UV_PUBLISH_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
           uv publish
