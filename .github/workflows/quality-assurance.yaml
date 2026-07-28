@@ -25,11 +25,11 @@ jobs:
       - name: Check formatting
         uses: astral-sh/ruff-action@v3
         with:
-          args: format --check --diff --exclude=src/manager --exclude=src/connection
+          args: format --check --diff
 
       - name: Check linting
         run: |
-          ruff check --output-format=github --extend-exclude=src/manager --extend-exclude=src/connection
+          ruff check --output-format=github
 
   type-checking:
     name: Static type checking
